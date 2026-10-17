@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docker Web Server | Muhammad Sani</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #0b1320; color: #ecf2fa; }
+    main { max-width: 1000px; margin: auto; padding: 54px 24px; }
+    header { display: flex; justify-content: space-between; gap: 20px; align-items: center; border-bottom: 1px solid #29384c; padding-bottom: 24px; }
+    .tag { color: #80daca; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; }
+    .badge { border: 1px solid #3a786b; border-radius: 30px; padding: 9px 15px; color: #9be7c4; font-size: 13px; }
+    h1 { font-size: clamp(40px, 7vw, 70px); line-height: 1.08; letter-spacing: -.045em; max-width: 750px; margin: 55px 0 24px; }
+    .intro { max-width: 620px; color: #adbed3; line-height: 1.8; font-size: 18px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin: 38px 0; }
+    article { padding: 24px; background: #121f30; border: 1px solid #29384c; border-radius: 12px; }
+    h2 { font-size: 19px; margin: 12px 0; }
+    article p, footer { color: #adbed3; line-height: 1.7; font-size: 14px; }
+    .number { color: #80daca; font-size: 13px; }
+    a { color: #80daca; }
+    footer { border-top: 1px solid #29384c; padding-top: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header><span class="tag">CodeAlpha / DevOps / Task 04</span><span class="badge">Docker + Nginx</span></header>
+    <h1>A web server.<br>Inside a container.</h1>
+    <p class="intro">Built by Muhammad Sani. This page is served by Nginx inside a Docker container, demonstrating image builds, container lifecycle management, and health monitoring.</p>
+    <section class="cards" aria-label="Project features">
+      <article><span class="number">01 / DEPLOY</span><h2>Package once</h2><p>The HTML and server configuration are packaged together in a custom Docker image.</p></article>
+      <article><span class="number">02 / MANAGE</span><h2>Control the lifecycle</h2><p>Start, stop, restart, and recreate the web server using Docker commands.</p></article>
+      <article><span class="number">03 / MONITOR</span><h2>Check server health</h2><p>Docker probes a dedicated HTTP endpoint. View its response at <a href="/health">/health</a>.</p></article>
+    </section>
+    <footer>Muhammad Sani &middot; CodeAlpha DevOps Internship<br>Version 1.0 &middot; Local Docker deployment</footer>
+  </main>
+</body>
+</html>
